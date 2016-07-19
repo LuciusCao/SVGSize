@@ -22,8 +22,7 @@ def add_size(src,width,height):
     return new_code
 
 if __name__ == '__main__':
-    path = input('enter your directory here')
-    q = glob.glob(path, recursive=True)
+    q = glob.glob('./img/**/*.svg', recursive=True)
     for item in q:
         f = open(item,'r')
         src = f.read()
